@@ -130,7 +130,7 @@ Trestle.configure do |config|
   #
   # Specify the user class to be used by trestle-auth.
   #
-  config.auth.user_class = -> { User }
+  config.auth.user_class = -> { Admin::User }
 
   # Specify the scope for valid admin users.
   # Defaults to config.auth.user_class (unscoped).
